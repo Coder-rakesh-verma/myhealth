@@ -1,4 +1,3 @@
-//```javascript
 const Doctor = require("../models/Doctor");
 
 // Create doctor
