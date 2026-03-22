@@ -1,4 +1,3 @@
-//```javascript
 const express = require("express");
 const router = express.Router();
 
@@ -9,11 +8,12 @@ const {
   getAvailableSlots,
   getDoctorSchedule,
   updateAppointmentStatus,
+  cancelAppointment,
   getPatientAppointments,
   getUpcomingAppointments,
-  deleteAppointment,
+  deleteAppointment,  
+  getAppointmentStats,
 } = require("../controllers/appointmentController");
-
 
 // Create appointment
 router.post("/", createAppointment);
@@ -49,4 +49,3 @@ router.get("/stats/summary", getAppointmentStats);
 router.delete("/:id", deleteAppointment);
 
 module.exports = router;
-
