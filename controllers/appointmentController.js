@@ -1,6 +1,6 @@
 lear// ```javascript
 const Appointment = require("../models/Appointment");
-const Doctor = require("../models/doctor");
+const Doctor = require("../models/Doctor");
 
 // Create Appointment (with double booking prevention)
 exports.createAppointment = async (req, res) => {
