@@ -1,4 +1,3 @@
-//```javascript
 require("dotenv").config();
 
 const express = require("express");
@@ -10,7 +9,7 @@ const doctorRoutes = require("./routes/doctorRoutes");
 const userRoutes = require("./routes/userRoutes");
 const profileRoutes = require("./routes/profileRoutes");
 const appointmentRoutes = require("./routes/appointmentRoutes");
-const errorHandler = require("./middlewares/errorHandler");
+const errorHandler = require("./middleware/errorHandler");
 const app = express();
 
 app.use(express.json());
